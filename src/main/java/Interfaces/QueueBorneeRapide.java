@@ -1,9 +1,13 @@
 package Interfaces;
 
-class QueueBorneeRapide implements QueueBorneeIntegerInterface {
+public class QueueBorneeRapide implements QueueBorneeIntegerInterface {
     private int capacite;
     private int[] queue;
     private int taille;
+
+    public int[] getQueue() {
+        return queue;
+    }
 
     public QueueBorneeRapide(int capacite) {
         this.capacite = capacite;

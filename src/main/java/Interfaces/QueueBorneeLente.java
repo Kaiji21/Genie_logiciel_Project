@@ -7,6 +7,14 @@ public class QueueBorneeLente implements QueueBorneeIntegerInterface {
     private int size;
     private int capacity;
 
+    public int[] getQueueArray() {
+        return queueArray;
+    }
+
+        public int getHead() {
+        return head;
+    }
+
     public QueueBorneeLente(int capacite) {
         if (capacite < 0) {
             throw new IllegalArgumentException("La capacité doit être supérieure ou égale à zéro");
